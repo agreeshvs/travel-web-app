@@ -5,21 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment</title>
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Concert+One&family=Playpen+Sans:wght@100..800&family=Playwrite+NZ+Basic:wght@100..400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header id="header">
+    <header id="header" class="w-100">
         <nav class="navbar navbar-expand-lg w-100">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo-img.png" alt="logo">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -41,16 +47,91 @@
                         </li>
                     </ul>
                     <form class="container-fluid justify-content-start">
-                        <button class="btn me-2" type="button">Login</button>
-                        <button class="btn btn-outline-secondary" type="button">Sign Up</button>
+                        <button class="btn me-2 t-app-btn-outlined" type="button">Login</button>
+                        <button class="btn btn-outline-secondary t-app-btn-outlined" type="button">Sign Up</button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section id="hero"></section>
-        <section id="features"></section>
+        <section id="hero" class="hero-section px-3 px-lg-4 px-xxl-5">
+            <div class="hero-div">
+                <div class="container">
+                    <div class="row">
+                        <!-- Hero Content -->
+                        <div class="col-9 col-lg-7 col-xl-6">
+                            <div class="hero-content">
+                                <h2 class="text-white mb-4">
+                                    Travel and See
+                                    the
+                                    World of Your Dreams.</h2>
+                                <p class="text-white">
+                                    Welcome to our
+                                    Vitour
+                                    website! We are a professional and reliable tours
+                                    company that offers a wide range of are many variations of passages.</p>
+                                <a class="btn t-app-btn-filled" href="#contact">Book
+                                    Your Stay <i class="icon-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="features" class="about-section theme-two bg-secondary px-3 mx-3 mx-lg-4 mx-xxl-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-12 col-lg-6">
+                            <div class="about-content ps-md-4">
+                                <div class="section-heading">
+                                    <span class="sub-title text-primary">Get To Know Our Agency</span>
+                                    <h2 class="mb-4">Why You Should Choose Our Company to Travel</h2>
+                                    <p class="mb-5">At Express Travel, we believe in the transformative power of travel.
+                                        As avid
+                                        explorers ourselves, we understand the desire to uncover. We are committed to
+                                        making
+                                        travel
+                                        accessible, enjoyable, and safe for everyone.</p>
+
+                                    <!-- About List -->
+                                    <div class="d-flex flex-column">
+                                        <div
+                                            class="about-list ps-0 d-flex flex-wrap flex-sm-nowrap flex-lg-wrap flex-xl-nowrap gap-3 list-unstyled mb-5">
+                                            <div class="icon">
+                                                <i class="fa-solid fa-globe"></i>
+                                            </div>
+
+                                            <div>
+                                                <h4>Global Pathway</h4>
+                                                <p class="mb-0">There are many variations of passages of available but
+                                                    the
+                                                    majority
+                                                    variations. Many variations of passages</p>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Button -->
+                                    <a class="btn t-app-btn-filled" href="about-us.html">More About Us <i
+                                            class="icon-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="about-image">
+                                <img src="images/about.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
         <section id="destination"></section>
         <section id="contact"></section>
     </main>
@@ -60,5 +141,9 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
+
+
+
+<!-- https://theme.nanoit.biz/tf-touria-demo/index-2.html -->
 
 </html>
