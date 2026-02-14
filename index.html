@@ -20,38 +20,40 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body w-100" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo-img.png" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#hero">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#destination">Destination</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <form class="container-fluid justify-content-start">
-                    <button class="btn me-2 t-app-btn-outlined" type="button">Login</button>
-                    <button class="btn btn-outline-secondary t-app-btn-outlined" type="button">Sign Up</button>
-                </form>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body w-100" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo-img.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#destination">Destination</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="container-fluid justify-content-start">
+                        <button class="btn me-2 t-app-btn-outlined" type="button">Login</button>
+                        <button class="btn btn-outline-secondary t-app-btn-outlined" type="button">Sign Up</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <main>
         <section id="hero" class="hero-section px-3 px-lg-4 px-xxl-5">
             <div class="hero-div d-flex flex-column">
@@ -145,7 +147,7 @@
                                 <div class="section-heading">
                                     <span class="sub-title text-primary">Get To Know Our Agency</span>
                                     <h2 class="mb-4">Why You Should Choose Our Company to Travel</h2>
-                                    <p class="mb-5">At Express Travel, we believe in the transformative power of travel.
+                                    <p class="mb-5">At Travel.in, we believe in the transformative power of travel.
                                         As avid
                                         explorers ourselves, we understand the desire to uncover. We are committed to
                                         making
@@ -253,7 +255,7 @@
                         <div class="section-heading">
                             <span class="sub-title text-primary">Contact Us</span>
                             <h2 class="mb-4">Get In Touch With Us</h2>
-                            <p class="mb-5">At Express Travel, we believe in the transformative power of travel. Let us
+                            <p class="mb-5">At Travel.in, we believe in the transformative power of travel. Let us
                                 help you create memories that will last a lifetime.</p>
                         </div>
                     </div>
@@ -267,27 +269,29 @@
                     <div class="col-12 col-lg-6">
                         <div class="contact-form">
                             <form action="#">
-                                <div class="row g-5">
-                                    <div class="col-12 col-lg-6">
-                                        <input type="text" class="form-control" placeholder="First Name">
-                                    </div>
-                                    <div class="col-12 col-lg-6">
-                                        <input type="text" class="form-control" placeholder="Last Name">
-                                    </div>
-                                    <div class="col-12 col-lg-6">
-                                        <input type="email" class="form-control" placeholder="Email">
-                                    </div>
-                                    <div class="col-12 col-lg-6">
-                                        <input type="text" class="form-control" placeholder="Phone">
-                                    </div>
+                                <div class="row g-4">
                                     <div class="col-12">
-                                        <textarea name="message" class="form-control" placeholder="Message"></textarea>
+                                        <input type="text" class="form-control" placeholder="Name" required
+                                            minlength="3">
                                     </div>
+
                                     <div class="col-12">
-                                        <button type="submit" class="btn t-app-btn-filled">Send Message</button>
+                                        <input type="email" class="form-control" placeholder="Email" required>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <textarea name="message" class="form-control" placeholder="Message" rows="5"
+                                            required minlength="10"></textarea>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn t-app-btn-filled">
+                                            Send Message
+                                        </button>
                                     </div>
                                 </div>
                             </form>
+
                         </div>
                     </div>
                 </div>
@@ -300,7 +304,7 @@
                 <div class="col-12">
                     <div class="section-heading py-3 text-center">
                         <span class="text-white">
-                            &copy; 2026 AREH Travel. All rights reserved.
+                            &copy; 2026 Travel.in. All rights reserved.
                         </span>
                     </div>
                 </div>

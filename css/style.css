@@ -14,6 +14,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    padding-top: 70px;
 }
 
 header {
@@ -25,7 +26,8 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100
+    z-index: 100;
+    width: 100%;
 }
 
 .nav-list {
@@ -105,7 +107,7 @@ section {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    top: 50px;
+    /* top: 50px; */
 }
 
 .hero-div {
@@ -331,6 +333,11 @@ section {
     font-weight: 700;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 @media only screen and (min-width: 1200px) {
     .hero-section {
         top: 50px;
@@ -339,22 +346,16 @@ section {
     .about-section {
         margin-top: 100px;
     }
-}
 
-@media only screen and (min-width: 1200px) {
     .hero-section .hero-div {
         padding-top: 124px;
         padding-bottom: 202px;
     }
-}
 
-@media only screen and (min-width: 1200px) {
     .search-form-container {
         height: 78px;
     }
-}
 
-@media only screen and (min-width: 1200px) {
     .hero-two-search-form {
         position: absolute;
         width: 100%;
